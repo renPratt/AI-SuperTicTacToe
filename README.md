@@ -6,6 +6,8 @@ This is a project that plays a professor's version of SuperTicTacToe against you
 
 ### How It Was Made
 
+**Tech Used:** For this, I used Java ran it within Eclipse. 
+
 For the SuperTicTacToe assignment, I was asked to write four classes. One was for the greedy
 algorithm, one was for the minimax algorithm, one was for the minimax algorithm with alpha
 beta pruning, and one was for the heuristic.
@@ -38,10 +40,20 @@ have been working much smoother, and alpha beta has been winning by a few points
 because I am able to give the alpha beta function a higher depth than the normal minimax
 function.
 
-### Optimizations?
-
 ### What I Learned
 
 ### My Professor's SuperTicTacToe Rules
+
+I am not sure how different my professors rules were from usual SuperTicTacToe, but here were the rules to his game*:
+There are 9 normal TicTacToe boards arranged in a 3x3 grid. 
+The first player is X, the second player is O. 
+Whoever starts first gets their pick of any location on the board as their starting point. 
+Depending on where the prior player went on the board they were on, the current player has to play on the corresponding board, i.e. if I am player one and put down a piece in the center square of the board I'm playing on, you now have to play in the center board of the 9 available boards, irrelevant of which board I was just playing on. 
+If the board you were supposed to play on is already won, then you can go anywhere. 
+If a board is tied, whoever has the most plays on it gets half of a point (to avoid ties).
+Whoever gets 3 won boards accross first wins. 
+Barring that, whoever wins the most points wins. 
+
+*You can also find these in the file that he wrote, **SuperTicTacToe.java**, but they are not written out very plainly there. Or, you can just play and see what happens!
 
 ### How You Can Play Against The AI
