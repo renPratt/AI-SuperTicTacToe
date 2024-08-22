@@ -1,5 +1,12 @@
 package pack;
 
+/**
+This is an algorithm that lives in the moment (it cannot guess what might happen in the future)
+It is easy peasy lemon squeezy
+@author Casey Renee Pratt
+**/
+
+
 public class GreedyAlgorithm extends SuperAI{
 	
 	@Override
@@ -51,7 +58,7 @@ public class GreedyAlgorithm extends SuperAI{
         int startX= gs.getActiveBoard()[0]*3;
         int startY= gs.getActiveBoard()[1]*3;
         
-        //playing in the middle spot in the first move for fun
+        //playing in the middle spot in the first move for fun (this is how I always play personally)
         if(board[4][4]== gs.SPACE&&(!HeuristicFunction.winBoard( new int[] {1, 1}, gs, maxPlayer, board)||!HeuristicFunction.winBoard(new int[] {1, 1}, gs, otherPlayer, board))) {
         		board[4][4]=maxPlayer;
 				bestScore=HeuristicFunction.evaluate(gs, maxPlayer, board, new int[] {1,1});
