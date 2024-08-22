@@ -10,7 +10,7 @@ This is a project that plays a professor's version of SuperTicTacToe against you
 
 For the SuperTicTacToe assignment, I was asked to write four classes. One was for the greedy
 algorithm, one was for the minimax algorithm, one was for the minimax algorithm with alpha
-beta pruning, and one was for the heuristic.
+beta pruning, and one was for the heuristic. The other three classes were written by my professor so that every student was operating within the same gaming structure.
 
 First, I wrote the **heuristic**. This was an easy class to write the general structure of, but I
 am still not confident now that it is ideal. I believe that I put a weight on all possible board cases, but
@@ -20,7 +20,9 @@ move that will earn it the highest heuristic score in that moment, with no regar
 what board it will lead the opponent to, etc. I then wrote the **minimax
 algorithm**. This had me stumped for a while, as it isn’t something I have written before, but
 eventually I was able to figure it out. It can see into the future of what the board might look like,
-and makes decisions based on that. From there, **adding alpha beta pruning** was easy. 
+and makes decisions based on that. From there, **adding alpha beta pruning** took less time than I expected it would.
+
+## How The Algorithms Compare
 
 When pitting my algorithms against each other, my greedy algorithm, of course, lost
 consistently. This was because it had no ability to look into the future, and didn't have an understanding of the larger
@@ -42,6 +44,10 @@ function.
 
 ### What I Learned
 
+This was my first exposure to alpha beta pruning. It made so much sense immediately upon being introduced to it, and I appreciate that my professor had us make a minmax algorithm with and without alpha beta pruning so that we could see the difference. I love anything where I get to use recursion, because I think I am pretty good at understanding how recursion works and when it works best, so I really enjoyed that part of this assignment. 
+
+Another thing I learned during this assignment is to check the source code!! Earlier, I talked about the "eligible" function not working for me-- that was from the professors provided code. It took me *so long* to figure out that was the problem, because I never thought to check that the professor wrote his code correctly! Because everyone else was operating with the same SuperTicTacToe.java file, I didn't change it, and instead wrote code on my end to adjust for the issue. 
+
 ### My Professor's SuperTicTacToe Rules
 
 I am not sure how different my professors rules were from usual SuperTicTacToe, but here were the rules to his game*:
@@ -56,4 +62,6 @@ Barring that, whoever wins the most points wins.
 
 *You can also find these in the file that he wrote, **SuperTicTacToe.java**, but they are not written out very plainly there. Or, you can just play and see what happens!
 
-### How You Can Play Against The AI
+## Notes On Playing 
+
+If you want to play against the AI, you start by running SuperTicTacToe/src/pack/SuperTicTacToe.java, then picking if you want to play white (Os) or black (Xs) by typing 1 or 2. Options 3 & 4 were for the in-class tournament. Black, or X, will always go first. You can pick which space to play in by typing the corresponding letter and number of the space you want to move to. In theory, most of this should be clear based on the output in the console. 
