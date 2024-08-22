@@ -1,5 +1,10 @@
 package pack;
 
+/**
+An algorithm that finds what move your opponent might make next as WELL as what move you should make next!
+@author Casey Renee Pratt
+**/
+
 public class MiniMaxAlgorithm extends SuperAI{
 	
 
