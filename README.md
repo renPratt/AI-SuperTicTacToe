@@ -62,6 +62,6 @@ Barring that, whoever wins the most points wins.
 
 *You can also find these in the file that he wrote, **SuperTicTacToe.java**, but they are not written out very plainly there. Or, you can just play and see what happens!
 
-## Notes On Playing 
+### Notes On Playing 
 
 If you want to play against the AI, you start by running SuperTicTacToe/src/pack/SuperTicTacToe.java, then picking if you want to play white (Os) or black (Xs) by typing 1 or 2. Options 3 & 4 were for the in-class tournament. Black, or X, will always go first. You can pick which space to play in by typing the corresponding letter and number of the space you want to move to. In theory, most of this should be clear based on the output in the console. 
