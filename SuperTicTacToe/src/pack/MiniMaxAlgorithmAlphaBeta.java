@@ -1,6 +1,11 @@
 package pack;
 
-public class TOURNAMENTMiniMaxAlgorithmAlphaBeta extends SuperAI{
+/**
+Minmax with alpha beta pruning, so if a path will not impact the outcome it is skipped over. 
+@author Casey Renee Pratt
+**/
+
+public class MiniMaxAlgorithmAlphaBeta extends SuperAI{
 	@Override
 	public int[] nextMove(SuperTicTacToe gs, char maxPlayer) {
         int[] bestMove = new int[]{-1, -1};
