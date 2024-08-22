@@ -1,5 +1,10 @@
 package pack;
 
+/**
+This evaluates how much any given move matters, so that each algorithm can function properly.
+@author Casey Renee Pratt
+**/
+
 public class HeuristicFunction {
     public static final int WIN_GAME = 1000; // Weight for winning the whole game
     public static final int PREVENT_WIN_GAME = 1000; // Weight for preventing opponent from winning the game
