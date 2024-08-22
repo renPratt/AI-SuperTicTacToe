@@ -1,7 +1,10 @@
-
-//this was written by my professor 
 package pack;
 
+/**
+ * All of the visuals of the board
+ * @author Ioannis A. Vetsikas
+ *
+ */
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
